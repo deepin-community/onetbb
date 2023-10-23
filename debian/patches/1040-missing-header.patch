@@ -1,0 +1,16 @@
+Description: Add patch for missing header to resolve FTBFS.
+Author: Mo Zhou <lumin@debian.org>
+Last-Update: 2023-07-13
+Bug-Debian: https://bugs.debian.org/1037798
+Forwarded: no
+
+--- tbb.orig/test/common/utils_assert.h
++++ tbb/test/common/utils_assert.h
+@@ -19,6 +19,7 @@
+ 
+ #include "config.h"
+ #include "utils_report.h"
++#include <cstdlib>
+ 
+ #define REPORT_FATAL_ERROR REPORT
+ 

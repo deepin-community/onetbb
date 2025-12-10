@@ -2,5 +2,10 @@
 1010-test-less-stress.patch
 1020-arch-generic.patch
 1030-warning-flags.patch
-1040-missing-header.patch
-1050-armel-atomic-past-buffer.patch
+#1050-armel-atomic-past-buffer.patch
+#fortify-source-3.patch
+sh4-support.patch
+sphinx-change-theme-to-avoid-ftbfs.patch
+skip-resumable-tasks.patch
+single-cpu.patch
+skip-test-mutex.patch

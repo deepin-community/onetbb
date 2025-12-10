@@ -21,11 +21,11 @@ Forwarded: no
 Bug-Debian: https://bugs.debian.org/1042009
 Last-Update: 2023-07-31
 
-Index: tbb/src/tbb/concurrent_monitor.h
+Index: onetbb/src/tbb/concurrent_monitor.h
 ===================================================================
---- tbb.orig/src/tbb/concurrent_monitor.h	2023-08-02 22:32:38.111877389 +0200
-+++ tbb/src/tbb/concurrent_monitor.h	2023-08-02 22:35:08.313405875 +0200
-@@ -290,7 +290,15 @@
+--- onetbb.orig/src/tbb/concurrent_monitor.h
++++ onetbb/src/tbb/concurrent_monitor.h
+@@ -290,7 +290,15 @@ public:
              n = my_waitset.front();
              if (n != end) {
                  my_waitset.remove(*n);

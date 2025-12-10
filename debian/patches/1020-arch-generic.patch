@@ -5,11 +5,11 @@ Last-Update: 2023-06-17
 Bug-Debian: https://bugs.debian.org/1006920
 Forwarded: https://github.com/oneapi-src/oneTBB/issues/776
 
-Index: tbb/src/tbb/tools_api/ittnotify_config.h
+Index: onetbb/src/tbb/tools_api/ittnotify_config.h
 ===================================================================
---- tbb.orig/src/tbb/tools_api/ittnotify_config.h
-+++ tbb/src/tbb/tools_api/ittnotify_config.h
-@@ -184,6 +184,10 @@
+--- onetbb.orig/src/tbb/tools_api/ittnotify_config.h
++++ onetbb/src/tbb/tools_api/ittnotify_config.h
+@@ -196,6 +196,10 @@
  #  define ITT_ARCH_RISCV64  10
  #endif /* ITT_ARCH_RISCV64 */
  
@@ -20,7 +20,7 @@ Index: tbb/src/tbb/tools_api/ittnotify_config.h
  #ifndef ITT_ARCH
  #  if defined _M_IX86 || defined __i386__
  #    define ITT_ARCH ITT_ARCH_IA32
-@@ -205,6 +209,8 @@
+@@ -217,6 +221,8 @@
  #    define ITT_ARCH ITT_ARCH_HPPA
  #  elif defined __riscv && __riscv_xlen == 64
  #    define ITT_ARCH ITT_ARCH_RISCV64
